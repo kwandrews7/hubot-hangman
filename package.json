@@ -1,0 +1,23 @@
+{
+    "name": "hubot-hangman",
+    "version": "1.0.0",
+    "description": "A hubot script for playing hangman using the WORDNIK api, api-key required.",
+    "main": "index.coffee",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kwandrews7/hubot-hangman.git"
+    },
+    "keywords": [
+        "hubot",
+        "hangman",
+        "wordnik"
+    ],
+    "author": "Kyle Andrews <https://github.com/kwandrews7>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kwandrews7/hubot-hangman/issues"
+    },
+    "dependencies": {
+        "coffee-script": "~1.6"
+    }
+}
