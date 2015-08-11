@@ -10,7 +10,8 @@
     "keywords": [
         "hubot",
         "hangman",
-        "wordnik"
+        "wordnik",
+        "hubot-scripts"
     ],
     "author": "Kyle Andrews <https://github.com/kwandrews7>",
     "license": "MIT",
