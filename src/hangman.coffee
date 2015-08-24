@@ -22,7 +22,7 @@ class Game
   constructor: (word, @definitions) ->
     @word = word.toUpperCase()
     @wordLetters = @word.split(//)
-    @answerLetters = ("-" for letter in @wordLetters)
+    @answerLetters = ("?" for letter in @wordLetters)
     @remainingGuesses = 9
     @previousGuesses = []
     @message = null
@@ -31,7 +31,7 @@ class Game
     this.wasAnswered() or this.wasHung()
 
   wasAnswered: ->
-    "-" not in @answerLetters
+    "?" not in @answerLetters
 
   wasHung: ->
     @remainingGuesses == 0

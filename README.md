@@ -26,3 +26,21 @@ To enable the script, add a `hubot-hangman` entry to the `external-scripts.json`
 file (you may need to create this file).
 
     ["hubot-hangman"]
+
+## Release Notes
+
+### 1.0.0
+ 
+* Confirmed hubot-hangman script is not available as NPM package
+* Migrated hubot-hangman script into NPM package format
+* Changed unguessed character identifier from `_` to `-` to improve client formatting
+* Published npmjs.com
+
+### 1.0.1
+
+* Updated tags for npmjs.com search
+
+### 1.1.0
+
+* Bugfix: Changed unguessed character identifier from `-` to `?`. Some words in the WORDNIK api include dashes, this can confuse the game leaving you stuck in an eternal loop. Changing the character to a question mark to prevent this from happening in the future. `*`'s and `_`'s have been avoided due to markdown formatting used by many chat client apps.
+
