@@ -44,3 +44,9 @@ file (you may need to create this file).
 
 * Bugfix: Changed unguessed character identifier from `-` to `?`. Some words in the WORDNIK api include dashes, this can confuse the game leaving you stuck in an eternal loop. Changing the character to a question mark to prevent this from happening in the future. `*`'s and `_`'s have been avoided due to markdown formatting used by many chat client apps.
 
+### 1.2.0
+
+* Added `-` as a default guess. Many users don't expect a dash to appear in the word and hence never guess special characters. 
+* Dash will be given for free.
+* If you guess a `-` it will be treated as a previously guessed letter and will not count against you.
+* If the word contains a dash, it will be shown automatically.
