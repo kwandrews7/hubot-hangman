@@ -1,7 +1,9 @@
 hubot-plusplus-hangman
 ==============
 
-A coffee-script based chat add-on for playing Hangman. The script originated in the hubot-scripts repo. The hubot-scripts repo was later deprecated in favor of using stand alone node_modules for each hubot add-on. Seeing as the hangman.coffee script had not been touched or modified in several years and the originator of the script did not have a repo with anything related to hangman, I opted to port this and maintained the MIT license.
+A coffee-script based chat add-on for playing Hangman. The script originated in the hubot-scripts repo. The hubot-scripts repo was later deprecated in favor of using stand alone node_modules for each hubot add-on. Seeing as the hangman.coffee script had not been touched or modified in several years and the originator of the script did not have a repo with anything related to hangman, I opted to port this and keep it maintained with the MIT license.
+
+Please feel free to leave any feedback on the github project.
 
 The script requires a Wordnik API key which you will need to request and setup as a CONFIG_VAR on Heroku. The API keys are free to request. http://developer.wordnik.com/
 
@@ -50,3 +52,9 @@ file (you may need to create this file).
 * Dash will be given for free.
 * If you guess a `-` it will be treated as a previously guessed letter and will not count against you.
 * If the word contains a dash, it will be shown automatically.
+
+### 1.2.1
+
+* 1.2.0 bug fix. 
+* Dashes were considered guessed, but weren't shown as guessed characters.
+* Now dashes are shown in word. `The 8 letter word is: ? ? ? ? - ? ? ?`
