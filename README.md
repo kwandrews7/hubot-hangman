@@ -1,6 +1,6 @@
 Play Hangman using Wordnik and Hubot!
 
-[![NPM](https://nodei.co/npm/comder.png?downloads=true&&downloadRank=true&stars=true)](https://nodei.co/npm/comder/) [![NPM](https://nodei.co/npm-dl/comder.png?months=3&height=3)](https://nodei.co/npm/comder/)
+[![NPM](https://nodei.co/npm/hubot-hangman.png?downloads=true&&downloadRank=true&stars=true)](https://nodei.co/npm/hubot-hangman/) [![NPM](https://nodei.co/npm-dl/hubot-hangman.png?months=3&height=3)](https://nodei.co/npm/hubot-hangman/)
 
 A coffee-script based chat add-on for playing Hangman. The script originated in the hubot-scripts repo. The hubot-scripts repo was later deprecated in favor of using stand alone node_modules for each hubot add-on. Seeing as the hangman.coffee script had not been touched or modified in several years and the originator of the script did not have a repo with anything related to hangman, I opted to port this and keep it maintained with the MIT license.
 
