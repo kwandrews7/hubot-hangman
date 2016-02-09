@@ -32,6 +32,16 @@ file (you may need to create this file).
 
 ## Release Notes
 
+### 1.3.0
+
+* Fixed: [Issue #1](https://github.com/kwandrews7/hubot-hangman/issues/1)
+* Thanks to cpradio for finding another special character bug.
+* Updated the special characters to be defined as an array that we can expand in the future if necessary.
+* Now both spaces and dashes will be shown in the word. 
+* Example: `This-is a-game` would now be shown as `? ? ? ? - ? ?   ? - ? ? ? ?`.
+* Happy guessing!
+
+
 ### 1.2.1
 
 * 1.2.0 bug fix. 

@@ -1,6 +1,6 @@
 {
     "name": "hubot-hangman",
-    "version": "1.2.1",
+    "version": "1.3.0",
     "description": "A hubot script for playing hangman using the WORDNIK api, api-key required.",
     "main": "index.coffee",
     "repository": {

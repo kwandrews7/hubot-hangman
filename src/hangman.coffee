@@ -23,10 +23,10 @@ class Game
     @word = word.toUpperCase()
     @wordLetters = @word.split(//)
     @answerLetters = ("?" for letter in @wordLetters)
-    this.guessDash()
     @remainingGuesses = 9
-    @previousGuesses = ["-"]
+    @previousGuesses = ["-", " "]
     @message = null
+    this.guessSpecial()
 
   isFinished: ->
     this.wasAnswered() or this.wasHung()
@@ -53,10 +53,11 @@ class Game
         when @word.length then this.guessWord(guess)
         else this.errantWordGuess(guess)
 
-  guessDash: ->
-    indexes = (index for letter, index in @wordLetters when "-" == letter)
-    if indexes.length > 0
-      @answerLetters[index] = @wordLetters[index] for index in indexes
+  guessSpecial: ->
+    for special in @previousGuesses
+      indexes = (index for letter, index in @wordLetters when special == letter)
+      if indexes.length > 0
+        @answerLetters[index] = @wordLetters[index] for index in indexes
 
   guessLetter: (guess) ->
     indexes = (index for letter, index in @wordLetters when guess == letter)
