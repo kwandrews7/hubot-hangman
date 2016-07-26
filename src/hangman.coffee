@@ -24,7 +24,7 @@ class Game
     @wordLetters = @word.split(//)
     @answerLetters = ("?" for letter in @wordLetters)
     @remainingGuesses = 9
-    @previousGuesses = ["-", " "]
+    @previousGuesses = ["-", " ", "'"]
     @message = null
     this.guessSpecial()
 

@@ -32,6 +32,11 @@ file (you may need to create this file).
 
 ## Release Notes
 
+### 1.3.1
+
+* Added `'` as a default guess. Now spaces, dashes, and apostrophes will not require guessing and will be shown in the word printout.
+* If you notice any other special characters causing problems please create an issue on the github project for me to address. 
+
 ### 1.3.0
 
 * Fixed: [Issue #1](https://github.com/kwandrews7/hubot-hangman/issues/1)
